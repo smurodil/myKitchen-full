@@ -20,6 +20,7 @@ export function useLogin(){
                 if(match){
                     const extracted_text = match[1];
                     console.log(extracted_text);
+                    toast.error("Wrong login or password")
                 }
             });
     };

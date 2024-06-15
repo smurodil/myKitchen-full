@@ -7,7 +7,7 @@ function RecipeList(recipe) {
 
   return (
     <>
-      <ul className="grid grid-cols-2 my-10 gap-5">
+      <ul className="md:grid md:grid-cols-2 my-10 md:gap-5 flex flex-col gap-10">
         {recipe &&
           recipe.recipe.map((recipe) => {
             return (

@@ -53,10 +53,10 @@ const PieChart = () => {
   };
 
   return <div className="mb-10">
-    <h2>
-        Foods categories statistic
+    <h2 className="text-base md:text-xl mr-auto ml-auto font-bold mb-5">
+      Statistics for the category of recipes
     </h2>
-    <div id="chart">
+    <div id="chart" className="w-full">
         <ReactApexChart
             options={options}
             series={series}

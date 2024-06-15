@@ -45,7 +45,7 @@ const Weather = () => {
   }
 
   return (
-    <div>
+    <div className="hidden md:block">
       <p>{weather.name} {weather.main.temp} °C</p>
     </div>
   );

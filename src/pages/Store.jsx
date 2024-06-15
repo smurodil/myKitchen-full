@@ -6,7 +6,6 @@ function Store() {
 
   return (
     <div className="max-container flex gap-5">
-      {cart.totalQuantity <= 0 && <h1>There is no recipe</h1>}
       <ul className="pt-5 w-4/5">
       <h2 className="font-bold text-3xl pb-5 border-b">Shopping Cart</h2>
         {cart.items.map((item) => {

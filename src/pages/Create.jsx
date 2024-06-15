@@ -218,7 +218,7 @@ function Create() {
           <button
             type="button"
             onClick={handlePreview}
-            className="btn btn-sm md:btn-md btn-success md:w2/5 w-full"
+            className="hidden md:block btn btn-sm md:btn-md btn-success md:w2/5 w-full"
           >
             Prewiev
           </button>

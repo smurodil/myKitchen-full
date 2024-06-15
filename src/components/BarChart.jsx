@@ -53,9 +53,9 @@ function BarChart() {
 
   return (
     <div className="app">
-      <h2 className="font-bold">Cooting time statistic, (in minutes)</h2>
+      <h2 className="font-bold text-xl mb-5">Statistics of recipes depending on cookingtime, (in minutes)</h2>
       <div className="row">
-        <div className="mixed-chart">
+        <div className="mixed-chart w-full">
           <Chart options={options} series={series} type="bar" width="480" />
         </div>
       </div>

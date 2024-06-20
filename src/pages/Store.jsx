@@ -1,6 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
 import CartItem from "../components/CartItem";
 import toast from "react-hot-toast";
+import { clear } from '../features/cart/cartSlice'
+import { Link } from "react-router-dom";
 
 function Store() {
   const cart = useSelector((state) => state.cart);
@@ -8,6 +10,7 @@ function Store() {
 
   const handleCheckout = () => {
     toast.success("Thanks for your order!")
+    dispatch(clear())
   }
 
   return (
@@ -45,9 +48,11 @@ function Store() {
               <span>Total:</span>
               <p className="font-semibold">Rp 149.995</p>
             </div>
-            <button onClick={handleCheckout} className="btn btn-primary w-full">
-              Checkout
-            </button>
+            <Link to='/'>
+              <button onClick={handleCheckout} className="btn btn-primary w-full">
+                Checkout
+              </button>
+            </Link>
          </div>
       </div>
     </div>

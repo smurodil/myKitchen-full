@@ -34,6 +34,9 @@ export const cartSlice = createSlice({
                 exitingItem.quantity ++
             }
         },
+        clear(state){
+            
+        },
     },
 });
 

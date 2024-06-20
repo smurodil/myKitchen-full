@@ -3,7 +3,7 @@ import { FaClock } from 'react-icons/fa6'
 
 function CartItem({ item }) {
   return (
-    <li className='flex items-center justify-between shadow-xl p-5'>
+    <li className='flex items-center md:justify-between justify-center gap-5 md:flex-row flex-col shadow-xl p-5'>
         <div className='w-[100px]'>
             <img src={item.images} alt="" />
         </div>

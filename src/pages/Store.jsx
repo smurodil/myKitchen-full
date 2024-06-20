@@ -1,8 +1,14 @@
 import { useSelector, useDispatch } from "react-redux";
 import CartItem from "../components/CartItem";
+import toast from "react-hot-toast";
 
 function Store() {
   const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+
+  const handleCheckout = () => {
+    toast.success("Thanks for your order!")
+  }
 
   return (
     <div className="max-container flex gap-5 md:flex-row flex-col">
@@ -39,7 +45,7 @@ function Store() {
               <span>Total:</span>
               <p className="font-semibold">Rp 149.995</p>
             </div>
-            <button className="btn btn-primary w-full">
+            <button onClick={handleCheckout} className="btn btn-primary w-full">
               Checkout
             </button>
          </div>

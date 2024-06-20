@@ -5,7 +5,7 @@ function Store() {
   const cart = useSelector((state) => state.cart);
 
   return (
-    <div className="max-container flex gap-5">
+    <div className="max-container flex gap-5 md:flex-row flex-col">
       <ul className="pt-5 w-4/5">
       <h2 className="font-bold text-3xl pb-5 border-b">Shopping Cart</h2>
         {cart.items.map((item) => {
@@ -18,8 +18,8 @@ function Store() {
          </h2>
          <div className="border-b pb-5">
           <label className="label text-blue-600">Promo Code</label>
-          <div className="items-center flex bg-gray-200 gap-3 rounded-lg pl-1">
-            <input className="py-2 px-4 bg-gray-200 placeholder:text-blue-600" type="text" placeholder="Enter promo code..." />
+          <div className="items-center flex w-full justify-between bg-gray-200 gap-3 rounded-lg pl-1">
+            <input className="py-2 w-full px-4 bg-gray-200 placeholder:text-blue-600" type="text" placeholder="Enter promo code..." />
             <button className="btn btn-primary">Apply</button>
           </div>
          </div>
